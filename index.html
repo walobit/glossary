@@ -4,194 +4,168 @@
   <head>
     <meta charset="UTF-8">
     <title>DataCamp Glossary</title>
+    <style>
+      body {
+        font-family: Arial,sans-serif;
+        width: 60em;
+        margin: auto;
+      }
+      dt {
+        font-weight: bold;
+      }
+      dt::after {
+        content: ":"
+      }
+      dd {
+        padding-bottom: 0.5em;
+      }
+    </style>
   </head>
   <body>
     <h1>DataCamp Glossary</h1>
     <dl>
       <dt id="absolute-path">absolute path</dt>
       <dd>
-        <p>
-          A <a href="#path">path</a> that always points to the same location.
-          Absolute paths always start with the <a href="#root-directory">root directory</a>.
-        </p>
+        A <a href="#path">path</a> that always points to the same location.
+        Absolute paths always start with the <a href="#root-directory">root directory</a>.
       </dd>
 
       <dt id="comma-separated-values">comma-separated values (CSV)</dt>
       <dd>
-        <p>
-          A textual format for tabular data in which columns are separated by commas
-          and records by newlines.
-          There are many variations on CSV,
-          differing primarily in how they handle quoted strings and empty columns.
-        </p>
+        A textual format for tabular data in which columns are separated by commas
+        and records by newlines.
+        There are many variations on CSV,
+        differing primarily in how they handle quoted strings and empty columns.
       </dd>
 
       <dt id="command-line-flag">command-line flag</dt>
       <dd>
-        <p>
-          An optional argument to a shell command that modifies its behavior.
-          Most single-letter command-line flags in Unix begin with a single dash;
-          longer flags usually begin with double dashes.
-          Either type may take arguments, as in <code>-n 3</code>.
-        </p>
+        An optional argument to a shell command that modifies its behavior.
+        Most single-letter command-line flags in Unix begin with a single dash;
+        longer flags usually begin with double dashes.
+        Either type may take arguments, as in <code>-n 3</code>.
       </dd>
 
       <dt id="command-line-shell">command-line shell</dt>
       <dd>
-        <p>
-          An interactive text-based program that enables a user to interact with the operating system.
-          A shell typically only has a handful of built-in commands,
-          and relies on external programs to perform most operations.
-        </p>
+        An interactive text-based program that enables a user to interact with the operating system.
+        A shell typically only has a handful of built-in commands,
+        and relies on external programs to perform most operations.
       </dd>
 
       <dt id="comment">comment</dt>
       <dd>
-        <p>
-          Text that is included in a command or program, but ignored by the computer.
-          Comments in the Unix shell begin with the <code>#</code> character;
-          comments in languages like C and Java may use delimiters like <code>/*</code> and <code>*/</code>.
-        </p>
+        Text that is included in a command or program, but ignored by the computer.
+        Comments in the Unix shell begin with the <code>#</code> character;
+        comments in languages like C and Java may use delimiters like <code>/*</code> and <code>*/</code>.
       </dd>
 
       <dt id="current-working-directory">current working directory</dt>
       <dd>
-        <p>
-          The default directory associated with a running program;
-          in the <a href="#command-line-shell">shell</a>,
-          the directory the user is "in".
-        </p>
+        The default directory associated with a running program;
+        in the <a href="#command-line-shell">shell</a>,
+        the directory the user is "in".
       </dd>
 
       <dt id="environment-variable">environment variable</dt>
       <dd>
-        <p>
-          A global named value associated with the <a href="#command-line-shell">shell</a>
-          that is inherited by all processes.
-          Environment variables are typically used to store things like the user's home directory.
-          See also <a href="#shell-variable">shell variable</a>.
-        </p>
+        A global named value associated with the <a href="#command-line-shell">shell</a>
+        that is inherited by all processes.
+        Environment variables are typically used to store things like the user's home directory.
+        See also <a href="#shell-variable">shell variable</a>.
       </dd>
 
       <dt id="filesystem">filesystem</dt>
       <dd>
-        <p>
-          A way of organizing the files and metadata stored by a computer.
-          The Unix filesystem is (mostly) hierarchical:
-          directories are nested to form a tree,
-          and files live in directories.
-        </p>
+        A way of organizing the files and metadata stored by a computer.
+        The Unix filesystem is (mostly) hierarchical:
+        directories are nested to form a tree,
+        and files live in directories.
       </dd>
 
       <dt id="home-directory">home directory</dt>
       <dd>
-        <p>
-          The root of a user's personal section of a <a href="#filesystem">filesystem</a>.
-        </p>
+        The root of a user's personal section of a <a href="#filesystem">filesystem</a>.
       </dd>
 
       <dt id="loop">loop</dt>
       <dd>
-        <p>
-          A control flow construct that instructs a computer to repeat a set of operations zero or more times.
-        </p>
+        A control flow construct that instructs a computer to repeat a set of operations zero or more times.
       </dd>
 
       <dt id="page">page</dt>
       <dd>
-        <p>
-          To display a screenful of a file at a time.
-        </p>
+        To display a screenful of a file at a time.
       </dd>
 
       <dt id="parent-directory">parent directory</dt>
       <dd>
-        <p>
-          The directory that contains the one in question.
-          Every directory has a parent directory except the <a href="#root-directory">root directory</a>
-          of the <a href="#filesystem">filesystem</a>.
-        </p>
+        The directory that contains the one in question.
+        Every directory has a parent directory except the <a href="#root-directory">root directory</a>
+        of the <a href="#filesystem">filesystem</a>.
       </dd>
 
       <dt id="path">path</dt>
       <dd>
-        <p>
-          A textual representation of a location in a <a href="#filesystem">filesystem</a>.
-          Paths can be <a href="#absolute-path">absolute</a> or <a href="#relative-path">relative</a>.
-        </p>
+        A textual representation of a location in a <a href="#filesystem">filesystem</a>.
+        Paths can be <a href="#absolute-path">absolute</a> or <a href="#relative-path">relative</a>.
       </dd>
 
       <dt id="pipe">pipe</dt>
       <dd>
-        <p>
-          A communication channel in the Unix shell that connects the output of one program to the input of another.
-          Pipes are written with vertical bars, as in <code>a | b</code>.
-        </p>
+        A communication channel in the Unix shell that connects the output of one program to the input of another.
+        Pipes are written with vertical bars, as in <code>a | b</code>.
       </dd>
 
       <dt id="prompt">prompt</dt>
       <dd>
-        <p>
-          A message printed by the <a href="#command-line-shell">shell</a> to signal that it is awaiting input.
-          The prompt can be as simple as a single <code>$</code> character,
-          or include status information like the time and <a href="#current-working-directory">current working directory</a>.
-        </p>
+        A message printed by the <a href="#command-line-shell">shell</a> to signal that it is awaiting input.
+        The prompt can be as simple as a single <code>$</code> character,
+        or include status information like the time and <a href="#current-working-directory">current working directory</a>.
       </dd>
 
       <dt id="redirection">redirection</dt>
       <dd>
-        <p>
-          Sending the standard output of a program to a file,
-          or reading the standard input of a program from a file.
-          The former is written as <code>a &gt; file</code>,
-          and the latter as <code>a &lt; file</code>.
-        </p>
+        Sending the standard output of a program to a file,
+        or reading the standard input of a program from a file.
+        The former is written as <code>a &gt; file</code>,
+        and the latter as <code>a &lt; file</code>.
       </dd>
 
       <dt id="relative-path">relative path</dt>
       <dd>
-        <p>
-          A <a href="#path">path</a> that must be interpreted from a starting point.
-          For example, <code>../a/b.txt</code> means "the file <code>b.txt</code>
-          in the directory <code>a</code> in the <a href="#parent-directory">parent directory</a>
-          of the current directory".
-        </p>
+        A <a href="#path">path</a> that must be interpreted from a starting point.
+        For example, <code>../a/b.txt</code> means "the file <code>b.txt</code>
+        in the directory <code>a</code> in the <a href="#parent-directory">parent directory</a>
+        of the current directory".
       </dd>
 
       <dt id="root-directory">root directory</dt>
       <dd>
-        <p>
-          The folder in the <a href="#filesystem">filesystem</a> that contains everything else
-          either directly or indirectly.
-        </p>
+        The folder in the <a href="#filesystem">filesystem</a> that contains everything else
+        either directly or indirectly.
       </dd>
 
       <dt id="shell-variable">shell variable</dt>
       <dd>
-        <p>
-          A local name-value variable associated with a single process.
-          See also <a href="#environment-variable">environment variable</a>.
-        </p>
+        A local name-value variable associated with a single process.
+        See also <a href="#environment-variable">environment variable</a>.
       </dd>
 
       <dt id="tab-completion">tab completion</dt>
       <dd>
-        <p>
-          Having the <a href="#command-line-shell">shell</a> fill in the rest of a command or path
-          when the tab key is pressed.
-        </p>
+        Having the <a href="#command-line-shell">shell</a> fill in the rest of a command or path
+        when the tab key is pressed.
       </dd>
 
       <dt id="wildcard">wildcard</dt>
       <dd>
-        <p>
-          A single placeholder character that can match zero or more actual characters in text.
-          For example, the wildcard <code>?</code> in the Unix shell matches any single actual character.
-        </p>
+        A single placeholder character that can match zero or more actual characters in text.
+        For example, the wildcard <code>?</code> in the Unix shell matches any single actual character.
       </dd>
-      
-    </dl>
 
+    </dl>
+    
     <hr/>
     <div align="center">
       Copyright &copy; 2018 DataCamp Inc.
