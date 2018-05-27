@@ -30,6 +30,24 @@
         Absolute paths always start with the <a href="#root-directory">root directory</a>.
       </dd>
 
+      <dt id="blob">blob</dt>
+      <dd>
+        A "binary large object",
+        i.e.,
+        a file of any kind in any format.
+      </dd>
+
+      <dt id="branch">branch</dt>
+      <dd>
+        A "parallel universe" in a version control repository.
+        Changes made in one branch are isolated from changes made in other branches.
+      </dd>
+
+      <dt id="clone">clone</dt>
+      <dd>
+        A local copy of a version control repository.
+      </dd>
+
       <dt id="comma-separated-values">comma-separated values (CSV)</dt>
       <dd>
         A textual format for tabular data in which columns are separated by commas
@@ -60,11 +78,30 @@
         comments in languages like C and Java may use delimiters like <code>/*</code> and <code>*/</code>.
       </dd>
 
+      <dt id="commit">commit</dt>
+      <dd>
+        Either the act of making a permanent record of the state of a version control repository,
+        or such a record itself.
+      </dd>
+
+      <dt id="conflict">conflict</dt>
+      <dd>
+        Overlapping differences between the changes made concurrently by two different users
+        or in two different branches of a version control repository.
+      </dd>
+
       <dt id="current-working-directory">current working directory</dt>
       <dd>
         The default directory associated with a running program;
         in the <a href="#command-line-shell">shell</a>,
         the directory the user is "in".
+      </dd>
+
+      <dt id="diff">diff</dt>
+      <dd>
+        The difference between one state of a version control repository and another,
+        e.g.,
+        the changes that have to be made to get from one state to the next.
       </dd>
 
       <dt id="environment-variable">environment variable</dt>
@@ -83,14 +120,63 @@
         and files live in directories.
       </dd>
 
+      <dt id="filesystem-url">filesystem URLs</dt>
+      <dd>
+        A URL of the form <code>file:///some/absolute/path</code>,
+        sometimes used to refer to a version control repository on the computer
+        where the command is being run.
+      </dd>
+
+      <dt id="global-settings">global settings</dt>
+      <dd>
+        Settings or preferences that apply to all of a user's projects.
+      </dd>
+
+      <dt id="hash">hash</dt>
+      <dd>
+        A short bit string generated from the contents of files in a deterministic but unpredictable way.
+        Files that are exactly the same have the same hash;
+        Two different files are almost certain to have different hashes.
+      </dd>
+
+      <dt id="hash-function">hash function</dt>
+      <dd>
+        A function that takes any data as input and generates a <a href="#hash">hash</a> of that data.
+      </dd>
+
       <dt id="home-directory">home directory</dt>
       <dd>
         The root of a user's personal section of a <a href="#filesystem">filesystem</a>.
       </dd>
 
+      <dt id="local-settings">local settings</dt>
+      <dd>
+        Settings or preferences that apply to a single project.
+      </dd>
+
+      <dt id="log">log</dt>
+      <dd>
+        The historical list of all commit messages provided when making changes to a version control repository.
+      </dd>
+
+      <dt id="log-message">log message</dt>
+      <dd>
+        The comment associated with a specific change in a version control repository.
+      </dd>
+
       <dt id="loop">loop</dt>
       <dd>
         A control flow construct that instructs a computer to repeat a set of operations zero or more times.
+      </dd>
+
+      <dt id="merge">merge</dt>
+      <dd>
+        To combine and reconcile the changes made in two different branches of a version control repository.
+      </dd>
+
+      <dt id="nested-repository">nested repository</dt>
+      <dd>
+        A repository located within another repository.
       </dd>
 
       <dt id="page">page</dt>
@@ -124,6 +210,16 @@
         or include status information like the time and <a href="#current-working-directory">current working directory</a>.
       </dd>
 
+      <dt id="pull">pull</dt>
+      <dd>
+        To download and merge changes from a remote version control repository.
+      </dd>
+
+      <dt id="push">push</dt>
+      <dd>
+        To send changes to a remote version control repository.
+      </dd>
+
       <dt id="redirection">redirection</dt>
       <dd>
         Sending the standard output of a program to a file,
@@ -138,6 +234,22 @@
         For example, <code>../a/b.txt</code> means "the file <code>b.txt</code>
         in the directory <code>a</code> in the <a href="#parent-directory">parent directory</a>
         of the current directory".
+      </dd>
+
+      <dt id="remote">remote</dt>
+      <dd>
+        A bookmark in a version control repository that identifies some other repository.
+      </dd>
+
+      <dt id="repository">repository</dt>
+      <dd>
+        A directory that stores both user-generated content and the metadata used by a version control system.
+      </dd>
+
+      <dt id="repository-status">repository status</dt>
+      <dd>
+        The current state of a version control repository
+        (e.g., whether any files have uncommitted changes).
       </dd>
 
       <dt id="root-directory">root directory</dt>
@@ -158,10 +270,37 @@
         See also <a href="#environment-variable">environment variable</a>.
       </dd>
 
+      <dt id="staging-area">staging area</dt>
+      <dd>
+        Part of the metadata of a Git version control repository
+        that records what changes will be saved in the next commit.
+      </dd>
+
+      <dt id="system-settings">system settings</dt>
+      <dd>
+        The settings and preferences that apply to all users and their projects on a particular computer.
+      </dd>
+
       <dt id="tab-completion">tab completion</dt>
       <dd>
         Having the <a href="#command-line-shell">shell</a> fill in the rest of a command or path
         when the tab key is pressed.
+      </dd>
+
+      <dt id="tree">tree</dt>
+      <dd>
+        In the Git version control system,
+        a description of the files and directories present at a particular moment.
+      </dd>
+
+      <dt id="undo">undo</dt>
+      <dd>
+        To reset a version control repository to a previous state.
+      </dd>
+
+      <dt id="version-control-system">version control system</dt>
+      <dd>
+        A software tool for recording and managing changes to a set of files.
       </dd>
 
       <dt id="wildcard">wildcard</dt>
